@@ -78,7 +78,7 @@ export default class ProjectsSection
                     './models/projects/jet/slideB.jpeg',
                     './models/projects/jet/slideC.jpeg'
                 ],
-                floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
+                floorTexture: this.resources.items.projectsJetFloor,
                 link:
                 {
                     href: 'https://github.com/ItsOkazaki',
@@ -102,7 +102,7 @@ export default class ProjectsSection
                     './models/projects/persona5/slideB.jpeg',
                     './models/projects/persona5/slideC.jpeg'
                 ],
-                floorTexture: this.resources.items.projectsChartogneFloorTexture,
+                floorTexture: this.resources.items.projectsPersona5Floor,
                 link:
                 {
                     href: 'https://github.com/ItsOkazaki',
@@ -126,7 +126,7 @@ export default class ProjectsSection
                     './models/projects/cardPortfolio/slideB.jpeg',
                     './models/projects/cardPortfolio/slideC.jpeg'
                 ],
-                floorTexture: this.resources.items.projectsBonhomme10ansFloorTexture,
+                floorTexture: this.resources.items.projectsCardPortfolioFloor,
                 link:
                 {
                     href: 'https://github.com/ItsOkazaki',
@@ -150,7 +150,7 @@ export default class ProjectsSection
                     './models/projects/facePuzzle/slideB.jpeg',
                     './models/projects/facePuzzle/slideC.jpeg'
                 ],
-                floorTexture: this.resources.items.projectsLuniFloorTexture,
+                floorTexture: this.resources.items.projectsFacePuzzleFloor,
                 link:
                 {
                     href: 'https://github.com/ItsOkazaki',
@@ -174,7 +174,7 @@ export default class ProjectsSection
                     './models/projects/handTracking/slideB.jpeg',
                     './models/projects/handTracking/slideC.jpeg'
                 ],
-                floorTexture: this.resources.items.projectsMadboxFloorTexture,
+                floorTexture: this.resources.items.projectsHandTrackingFloor,
                 link:
                 {
                     href: 'https://github.com/ItsOkazaki',

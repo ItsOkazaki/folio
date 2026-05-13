@@ -59,7 +59,6 @@ export default class ProjectsSection
     {
         this.meshes = {}
 
-        // this.meshes.boardStructure = this.objects.getConvertedMesh(this.resources.items.projectsBoardStructure.scene.children, { floorShadowTexture: this.resources.items.projectsBoardStructureFloorShadowTexture })
         this.resources.items.areaOpenTexture.magFilter = THREE.NearestFilter
         this.resources.items.areaOpenTexture.minFilter = THREE.LinearFilter
         this.meshes.boardPlane = this.resources.items.projectsBoardPlane.scene.children[0]
@@ -70,19 +69,19 @@ export default class ProjectsSection
     setList()
     {
         this.list = [
+            // ─── PROJECT 1 ───────────────────────────────────────────────
             {
-                name: 'Three.js Journey',
+                name: 'Jet/Timeline Website',
                 imageSources:
                 [
-                    './models/projects/threejsJourney/slideA.webp',
-                    './models/projects/threejsJourney/slideB.webp',
-                    './models/projects/threejsJourney/slideC.webp',
-                    './models/projects/threejsJourney/slideD.webp'
+                    './models/projects/jet/slideA.jpeg',
+                    './models/projects/jet/slideB.jpeg',
+                    './models/projects/jet/slideC.jpeg'
                 ],
                 floorTexture: this.resources.items.projectsThreejsJourneyFloorTexture,
                 link:
                 {
-                    href: 'https://threejs-journey.com?c=p3',
+                    href: 'https://github.com/ItsOkazaki',
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -91,23 +90,22 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'fwa', x: 3.95, y: 4.15 }
-                ]
+                distinctions: []
             },
+
+            // ─── PROJECT 2 ───────────────────────────────────────────────
             {
-                name: 'Chartogne Taillet',
+                name: 'Persona 5 Portfolio',
                 imageSources:
                 [
-                    './models/projects/chartogne/slideA.jpg',
-                    './models/projects/chartogne/slideB.jpg',
-                    './models/projects/chartogne/slideC.jpg'
+                    './models/projects/persona5/slideA.jpeg',
+                    './models/projects/persona5/slideB.jpeg',
+                    './models/projects/persona5/slideC.jpeg'
                 ],
                 floorTexture: this.resources.items.projectsChartogneFloorTexture,
                 link:
                 {
-                    href: 'https://chartogne-taillet.com',
+                    href: 'https://github.com/ItsOkazaki',
                     x: - 4.8,
                     y: - 3.3,
                     halfExtents:
@@ -116,26 +114,22 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
+                distinctions: []
             },
+
+            // ─── PROJECT 3 ───────────────────────────────────────────────
             {
-                name: 'Bonhomme | 10 ans',
+                name: 'Card Animation Portfolio',
                 imageSources:
                 [
-                    './models/projects/bonhomme10ans/slideA.webp',
-                    './models/projects/bonhomme10ans/slideB.webp',
-                    './models/projects/bonhomme10ans/slideC.webp',
-                    './models/projects/bonhomme10ans/slideD.webp'
+                    './models/projects/cardPortfolio/slideA.jpeg',
+                    './models/projects/cardPortfolio/slideB.jpeg',
+                    './models/projects/cardPortfolio/slideC.jpeg'
                 ],
                 floorTexture: this.resources.items.projectsBonhomme10ansFloorTexture,
                 link:
                 {
-                    href: 'https://anniversary.bonhommeparis.com/',
+                    href: 'https://github.com/ItsOkazaki',
                     x: - 4.8,
                     y: - 2,
                     halfExtents:
@@ -144,25 +138,22 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                ]
+                distinctions: []
             },
+
+            // ─── PROJECT 4 ───────────────────────────────────────────────
             {
-                name: 'Luni.app',
+                name: 'Face Puzzle',
                 imageSources:
                 [
-                    './models/projects/luni/slideA.webp',
-                    './models/projects/luni/slideB.webp',
-                    './models/projects/luni/slideC.webp',
-                    './models/projects/luni/slideD.webp'
+                    './models/projects/facePuzzle/slideA.jpeg',
+                    './models/projects/facePuzzle/slideB.jpeg',
+                    './models/projects/facePuzzle/slideC.jpeg'
                 ],
                 floorTexture: this.resources.items.projectsLuniFloorTexture,
                 link:
                 {
-                    href: 'https://luni.app',
+                    href: 'https://github.com/ItsOkazaki',
                     x: - 4.8,
                     y: - 3,
                     halfExtents:
@@ -171,24 +162,22 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                ]
+                distinctions: []
             },
+
+            // ─── PROJECT 5 ───────────────────────────────────────────────
             {
-                name: 'Madbox',
+                name: 'Hand Tracking Mini Games',
                 imageSources:
                 [
-                    './models/projects/madbox/slideA.jpg',
-                    './models/projects/madbox/slideB.jpg',
-                    './models/projects/madbox/slideC.jpg'
+                    './models/projects/handTracking/slideA.jpeg',
+                    './models/projects/handTracking/slideB.jpeg',
+                    './models/projects/handTracking/slideC.jpeg'
                 ],
                 floorTexture: this.resources.items.projectsMadboxFloorTexture,
                 link:
                 {
-                    href: 'https://madbox.io',
+                    href: 'https://github.com/ItsOkazaki',
                     x: - 4.8,
                     y: - 4,
                     halfExtents:
@@ -197,194 +186,8 @@ export default class ProjectsSection
                         y: 1.5
                     }
                 },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 }
-                ]
+                distinctions: []
             },
-            {
-                name: 'Scout',
-                imageSources:
-                [
-                    './models/projects/scout/slideA.jpg',
-                    './models/projects/scout/slideB.jpg',
-                    './models/projects/scout/slideC.jpg'
-                ],
-                floorTexture: this.resources.items.projectsScoutFloorTexture,
-                link:
-                {
-                    href: 'https://fromscout.com',
-                    x: - 4.8,
-                    y: - 2,
-                    halfExtents:
-                    {
-                        x: 3.2,
-                        y: 1.5
-                    }
-                },
-                distinctions:
-                [
-                ]
-            },
-            // {
-            //     name: 'Zenly',
-            //     imageSources:
-            //     [
-            //         './models/projects/zenly/slideA.jpg',
-            //         './models/projects/zenly/slideB.jpg',
-            //         './models/projects/zenly/slideC.jpg'
-            //     ],
-            //     floorTexture: this.resources.items.projectsZenlyFloorTexture,
-            //     link:
-            //     {
-            //         href: 'https://zen.ly',
-            //         x: - 4.8,
-            //         y: - 4.2,
-            //         halfExtents:
-            //         {
-            //             x: 3.2,
-            //             y: 1.5
-            //         }
-            //     },
-            //     distinctions:
-            //     [
-            //         { type: 'awwwards', x: 3.95, y: 4.15 },
-            //         { type: 'fwa', x: 5.6, y: 4.15 },
-            //         { type: 'cssda', x: 7.2, y: 4.15 }
-            //     ]
-            // },
-            {
-                name: 'priorHoldings',
-                imageSources:
-                [
-                    './models/projects/priorHoldings/slideA.jpg',
-                    './models/projects/priorHoldings/slideB.jpg',
-                    './models/projects/priorHoldings/slideC.jpg'
-                ],
-                floorTexture: this.resources.items.projectsPriorHoldingsFloorTexture,
-                link:
-                {
-                    href: 'https://prior.co.jp/discover/',
-                    x: - 4.8,
-                    y: - 3,
-                    halfExtents:
-                    {
-                        x: 3.2,
-                        y: 1.5
-                    }
-                },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
-            },
-            {
-                name: 'orano',
-                imageSources:
-                [
-                    './models/projects/orano/slideA.jpg',
-                    './models/projects/orano/slideB.jpg',
-                    './models/projects/orano/slideC.jpg'
-                ],
-                floorTexture: this.resources.items.projectsOranoFloorTexture,
-                link:
-                {
-                    href: 'https://orano.imm-g-prod.com/experience/innovation/en',
-                    x: - 4.8,
-                    y: - 3.4,
-                    halfExtents:
-                    {
-                        x: 3.2,
-                        y: 1.5
-                    }
-                },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
-            },
-            {
-                name: 'citrixRedbull',
-                imageSources:
-                [
-                    './models/projects/citrixRedbull/slideA.jpg',
-                    './models/projects/citrixRedbull/slideB.jpg',
-                    './models/projects/citrixRedbull/slideC.jpg'
-                ],
-                floorTexture: this.resources.items.projectsCitrixRedbullFloorTexture,
-                link:
-                {
-                    href: 'https://thenewmobileworkforce.imm-g-prod.com/',
-                    x: - 4.8,
-                    y: - 4.4,
-                    halfExtents:
-                    {
-                        x: 3.2,
-                        y: 1.5
-                    }
-                },
-                distinctions:
-                [
-                    { type: 'awwwards', x: 3.95, y: 4.15 },
-                    { type: 'fwa', x: 5.6, y: 4.15 },
-                    { type: 'cssda', x: 7.2, y: 4.15 }
-                ]
-            },
-            // {
-            //     name: 'gleecChat',
-            //     imageSources:
-            //     [
-            //         './models/projects/gleecChat/slideA.jpg',
-            //         './models/projects/gleecChat/slideB.jpg',
-            //         './models/projects/gleecChat/slideC.jpg',
-            //         './models/projects/gleecChat/slideD.jpg'
-            //     ],
-            //     floorTexture: this.resources.items.projectsGleecChatFloorTexture,
-            //     link:
-            //     {
-            //         href: 'http://gleec.imm-g-prod.com',
-            //         x: - 4.8,
-            //         y: - 3.4,
-            //         halfExtents:
-            //         {
-            //             x: 3.2,
-            //             y: 1.5
-            //         }
-            //     },
-            //     distinctions:
-            //     [
-            //         { type: 'awwwards', x: 3.95, y: 4.15 },
-            //         { type: 'fwa', x: 5.6, y: 4.15 },
-            //         { type: 'cssda', x: 7.2, y: 4.15 }
-            //     ]
-            // },
-            // {
-            //     name: 'keppler',
-            //     imageSources:
-            //     [
-            //         './models/projects/keppler/slideA.jpg',
-            //         './models/projects/keppler/slideB.jpg',
-            //         './models/projects/keppler/slideC.jpg'
-            //     ],
-            //     floorTexture: this.resources.items.projectsKepplerFloorTexture,
-            //     link:
-            //     {
-            //         href: 'https://brunosimon.github.io/keppler/',
-            //         x: 2.75,
-            //         y: - 1.1,
-            //         halfExtents:
-            //         {
-            //             x: 3.2,
-            //             y: 1.5
-            //         }
-            //     },
-            //     distinctions: []
-            // }
         ]
     }
 

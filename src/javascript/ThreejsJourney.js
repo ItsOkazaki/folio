@@ -16,12 +16,12 @@ export default class ThreejsJourney
         this.$no = this.$container.querySelector('.js-no')
         this.step = 0
         this.maxStep = this.$messages.length - 1
-        this.seenCount = window.localStorage.getItem('threejsJourneySeenCount') || 0
+        this.seenCount = window.localStorage.getItem('okazakiPortfolioSeenCount') || 0
         this.seenCount = parseInt(this.seenCount)
         this.shown = false
         this.traveledDistance = 0
         this.minTraveledDistance = (this.config.debug ? 5 : 75) * (this.seenCount + 1)
-        this.prevent = !!window.localStorage.getItem('threejsJourneyPrevent')
+        this.prevent = !!window.localStorage.getItem('okazakiPortfolioPrevent')
 
         if(this.config.debug)
             this.start()
@@ -51,11 +51,12 @@ export default class ThreejsJourney
         // Clicks
         this.$yes.addEventListener('click', () =>
         {
+            window.open('https://github.com/ItsOkazaki', '_blank')
             gsap.delayedCall(2, () =>
             {
                 this.hide()
             })
-            window.localStorage.setItem('threejsJourneyPrevent', 1)
+            window.localStorage.setItem('okazakiPortfolioPrevent', 1)
         })
 
         this.$no.addEventListener('click', () =>
@@ -100,37 +101,13 @@ export default class ThreejsJourney
 
     setLog()
     {
-//         console.log(
-//             `%c 
-// ▶
-// ▶▶▶▶
-// ▶▶▶▶▶▶▶
-// ▶▶▶▶▶▶▶▶▶▶
-// ▶▶▶▶▶▶▶▶     ▶
-// ▶▶▶▶      ▶▶▶▶▶▶▶▶
-// ▶     ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶
-//    ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶
-//       ▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶▶      
-// ▶▶        ▶▶▶▶▶▶▶▶▶▶     ▶   ▶▶▶
-// ▶▶▶▶▶▶        ▶      ▶▶▶▶▶   ▶▶▶▶▶▶
-// ▶▶▶▶▶▶▶▶▶▶▶       ▶▶▶▶▶▶▶▶   ▶▶▶▶▶▶▶▶▶
-// ▶▶▶▶▶▶▶▶▶▶▶▶▶   ▶▶▶▶▶▶▶▶▶▶   ▶▶▶▶▶▶▶
-// ▶▶▶▶▶▶▶▶▶▶▶▶▶   ▶▶▶▶▶▶▶▶▶▶   ▶▶▶▶
-// ▶▶▶▶▶▶▶▶▶▶▶▶▶   ▶▶▶▶▶▶▶▶▶▶   ▶
-//  ▶▶▶▶▶▶▶▶▶▶▶▶   ▶▶▶▶▶▶▶▶▶▶
-//      ▶▶▶▶▶▶▶▶   ▶▶▶▶▶▶▶
-// ▶▶▶▶     ▶▶▶▶   ▶▶▶
-// ▶▶▶▶▶▶▶     ▶   
-// ▶▶▶▶▶▶▶▶▶▶
-// ▶▶▶▶▶▶▶
-// ▶▶
-//             `,
-//             'color: #705df2;'
-//         )
-        console.log('%cWhat are you doing here?! you sneaky developer...', 'color: #32ffce');
-        console.log('%cDo you want to learn how this portfolio has been made?', 'color: #32ffce');
-        console.log('%cCheckout Three.js Journey 👉 https://threejs-journey.com?c=p2', 'color: #32ffce');
-        console.log('%c— Bruno', 'color: #777777');
+        console.log('%cOi, sneaky developer 👀', 'color: #32ffce; font-size: 14px;')
+        console.log('%cYou found the source. I\'m Rahmani Mostapha aka ItsOkazaki.', 'color: #32ffce;')
+        console.log('%cCS Student @ University Center El Bayadh, Algeria 🇩🇿', 'color: #32ffce;')
+        console.log('%cQuantum Code Club member | Frontend • Backend • GameDev • AI • Vibe Coder', 'color: #32ffce;')
+        console.log('%cGitHub 👉 https://github.com/ItsOkazaki', 'color: #32ffce;')
+        console.log('%cInstagram 👉 https://www.instagram.com/itsmeokazaki/', 'color: #32ffce;')
+        console.log('%c— Okazaki', 'color: #777777')
     }
 
     hide()
@@ -166,7 +143,7 @@ export default class ThreejsJourney
 
         this.shown = true
         
-        window.localStorage.setItem('threejsJourneySeenCount', this.seenCount + 1)
+        window.localStorage.setItem('okazakiPortfolioSeenCount', this.seenCount + 1)
     }
 
     updateMessages()
@@ -202,7 +179,6 @@ export default class ThreejsJourney
 
             i--
         }
-
 
         this.$messages.reverse()
     }

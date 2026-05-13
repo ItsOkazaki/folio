@@ -51,7 +51,6 @@ export default class InformationSection
             duplicated: true,
             shadow: { sizeX: 0.6, sizeY: 3.5, offsetZ: - 0.15, alpha: 0.35 },
             mass: 1.5,
-            // soundName: 'woodHit'
         })
 
         this.baguettes.b = this.objects.add({
@@ -63,7 +62,6 @@ export default class InformationSection
             shadow: { sizeX: 0.6, sizeY: 3.5, offsetZ: - 0.15, alpha: 0.35 },
             mass: 1.5,
             sleep: false,
-            // soundName: 'woodHit'
         })
     }
 
@@ -86,24 +84,24 @@ export default class InformationSection
         this.links.container.matrixAutoUpdate = false
         this.container.add(this.links.container)
 
-        // Options
+        // Options — replaced with Rahmani Mostapha / ItsOkazaki contacts
+        //       Ideally swap the PNG files in static/textures/ with your own icons.
         this.links.options = [
             {
-                href: 'https://twitter.com/bruno_simon/',
-                labelTexture: this.resources.items.informationContactTwitterLabelTexture
-            },
-            {
-                href: 'https://github.com/brunosimon/',
+                // GitHub → ItsOkazaki
+                href: 'https://github.com/ItsOkazaki',
                 labelTexture: this.resources.items.informationContactGithubLabelTexture
             },
             {
-                href: 'https://www.linkedin.com/in/simonbruno77/',
-                labelTexture: this.resources.items.informationContactLinkedinLabelTexture
+                // Personal Instagram → itsmeokazaki
+                href: 'https://www.instagram.com/itsmeokazaki/?hl=en',
+                labelTexture: this.resources.items.informationContactTwitterLabelTexture  // reusing Twitter slot — swap texture if you want
             },
             {
-                href: 'mailto:simon.bruno.77@gmail.com',
-                labelTexture: this.resources.items.informationContactMailLabelTexture
-            }
+                // Club Instagram → qc__club
+                href: 'https://www.instagram.com/qc__club/?hl=en',
+                labelTexture: this.resources.items.informationContactLinkedinLabelTexture // reusing LinkedIn slot — swap texture if you want
+            },
         ]
 
         // Create each link
@@ -157,7 +155,10 @@ export default class InformationSection
         // Geometry
         this.activities.geometry = new THREE.PlaneGeometry(2 * this.activities.multiplier, 1 * this.activities.multiplier, 1, 1)
 
-        // Texture
+        // Texture — replace the file at:
+        //   static/textures/informationActivities.png
+        // with your own image showing your skills/activities.
+        // Keep the same filename and it will load automatically.
         this.activities.texture = this.resources.items.informationActivitiesTexture
         this.activities.texture.magFilter = THREE.NearestFilter
         this.activities.texture.minFilter = THREE.LinearFilter
